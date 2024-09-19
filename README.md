@@ -15,3 +15,4 @@ Dowload code và chạy bằng cách </br>
      + cd bus-tickets-frontend </br>
      + npm install </br>
      + npm run dev </br>
+     + Truy cập: http://localhost:3000/
