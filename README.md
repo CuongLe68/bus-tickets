@@ -15,7 +15,7 @@ Dowload code và chạy bằng cách </br>
      + cd bus-tickets-frontend </br>
      + npm install </br>
      + npm run dev </br>
-     + Truy cập: http://localhost:3000/
+     + Truy cập: http://localhost:3000/ </br>
 -------------------------- </br>
 Phần gợi ý tìm chuyến xe chỉ có ở đà nẵng, nếu tìm ở tỉnh thành khác thì chỉ cần nhập đúng địa chỉ nhà của mình, vd:
 + Điểm đi: 720A Điện Biên Phủ, phường 22, quận Bình Thạnh, TPHCM
