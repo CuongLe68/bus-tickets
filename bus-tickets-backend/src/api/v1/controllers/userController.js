@@ -185,7 +185,7 @@ const userController = {
       }
 
       // Đường dẫn ảnh được lưu trong req.file.path
-      const newImageUrl = `https://babefood.io.vn/uploads/${req.file.filename}`;
+      const newImageUrl = `http://localhost:8000/uploads/${req.file.filename}`;
 
       try {
         const user = await User.findById(req.body.userId);

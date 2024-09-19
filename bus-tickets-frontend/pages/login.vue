@@ -440,7 +440,7 @@ export default {
           otp: this.otp,
         };
         const res = await axios.post(
-          "https://babefood.io.vn/v1/bustickets/user/register-user",
+          "http://localhost:8000/v1/bustickets/user/register-user",
           newUser
         );
 

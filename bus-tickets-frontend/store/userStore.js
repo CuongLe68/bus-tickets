@@ -35,7 +35,7 @@ export const actions = {
 
     try {
       const res = await axios.post(
-        "https://babefood.io.vn/v1/bustickets/user/login-user",
+        "http://localhost:8000/v1/bustickets/user/login-user",
         newUser
       );
       commit("SET_USER", res.data);
@@ -51,7 +51,7 @@ export const actions = {
 
     try {
       const res = await axios.post(
-        "https://babefood.io.vn/v1/bustickets/otp/send-otp",
+        "http://localhost:8000/v1/bustickets/otp/send-otp",
         { email: email }
       );
       commit("SET_OTP", res.data);
@@ -69,7 +69,7 @@ export const actions = {
       const axiosJWT = createAxios(state.user.data);
 
       const res = await axiosJWT.post(
-        `https://babefood.io.vn/v1/bustickets/user/upload-image/`,
+        `http://localhost:8000/v1/bustickets/user/upload-image/`,
         formData,
         {
           headers: {
@@ -106,7 +106,7 @@ export const actions = {
       const axiosJWT = createAxios(state.user.data);
 
       const res = await axiosJWT.put(
-        `https://babefood.io.vn/v1/bustickets/user/update-user/`,
+        `http://localhost:8000/v1/bustickets/user/update-user/`,
         updatUser,
         {
           headers: {
@@ -144,7 +144,7 @@ export const actions = {
       const axiosJWT = createAxios(state.user.data);
 
       const res = await axiosJWT.post(
-        "https://babefood.io.vn/v1/bustickets/user/logout",
+        "http://localhost:8000/v1/bustickets/user/logout",
         { userId: state.user.data._id },
         {
           headers: {

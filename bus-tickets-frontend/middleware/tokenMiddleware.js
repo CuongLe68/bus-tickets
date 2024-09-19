@@ -6,7 +6,7 @@ const { jwtDecode } = require("jwt-decode");
 const refreshToken = async (id) => {
   try {
     const res = await axios.post(
-      "https://babefood.io.vn/v1/bustickets/token/refresh-token",
+      "http://localhost:8000/v1/bustickets/token/refresh-token",
       {
         id: id,
       }
